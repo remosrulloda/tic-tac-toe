@@ -1,14 +1,14 @@
-.board {
+.gameBoard {
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(3, 200px);
+    justify-content: center;
 }
 
 .square {
     border: 1px solid black;
 }
 
-.gameContainer,
 .title {
     display: flex;
     justify-content: center;
