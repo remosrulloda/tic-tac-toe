@@ -1,18 +1,19 @@
-// let gameBoard = document.querySelector('.container');
+let gameBoard = document.querySelector('.gameBoard');
 let squares = document.querySelectorAll('.square');
 
-const gameBoard = () => {
-    let gameBoardArr = ['', '', '', '', '', '', '', '', ''];
+const Gameboard = () => {
+    let gameBoard = ['', '', '', '', '', '', '', '', ''];
 
     const render = () => {
         let boardHTML = '';
+        gameBoard.forEach((square, index) => {
+            boardHTML += `<div class='square' id='square-${index}'>${square}</div>`;
 
+        })
     }
 
+    gameBoard.innerHTML = boardHTML;
 };
 
-
-
-const displayController = () => {
-
-};
+const startBtn = document.querySelector('#startBtn');
+const restartBtn = document.querySelector('#restartBtn');
