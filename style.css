@@ -7,6 +7,10 @@
 
 .square {
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
 }
 
 .title {
@@ -27,4 +31,14 @@
     flex-direction: column;
     justify-content: space-evenly;
     gap: 20px;
+}
+
+.message,
+.result-display {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 60px;
 }
